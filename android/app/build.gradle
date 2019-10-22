@@ -131,6 +131,7 @@ android {
         applicationId "com.react_native_template_lednew_ts_base"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative60"
         versionCode 1
         versionName "1.0"
     }
@@ -189,6 +190,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation project(':react-native-navigation')
 }
 
 // Run this once to be able to run the application with BUCK
