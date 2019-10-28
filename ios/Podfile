@@ -7,6 +7,7 @@ target 'react_native_template_lednew_ts_base' do
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
   pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
+  
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/'
   pod 'React-CoreModules', :path => '../node_modules/react-native/React/CoreModules'
@@ -34,20 +35,7 @@ target 'react_native_template_lednew_ts_base' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'react_native_template_lednew_ts_baseTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'ReactNativeNavigation', :podspec => '../node_modules/react-native-navigation/ReactNativeNavigation.podspec'
 
   use_native_modules!
-end
-
-target 'react_native_template_lednew_ts_base-tvOS' do
-  # Pods for react_native_template_lednew_ts_base-tvOS
-
-  target 'react_native_template_lednew_ts_base-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
